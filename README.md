@@ -1,15 +1,12 @@
 # How to run this solution:
 1. Download it to local computer
 2. Ensure you have installed pyhton, pytest, pyodbc, ODBC Driver 18 for SQL Server, pytest-html
-3. Update Variables.py file with your credentials and db address (currently they are specific for my local machine)
-4. Open CMD and navigate to root folder of the project
-5. Execute next command: pytest TestDatabaseClass.py --html=additional/pytest_report.html
-6. Check additional folder for Test Report and Excel file with test cases
+3. Ensure you have istalled 'TRN' database from mentoring prerequisites (https://learn.epam.com/myLearning/program?groupGuid=5e997914-76e4-42ff-a19f-7b7bfc78ed45)
+4. Update Variables.py file with your credentials and db address (currently they are specific for my local machine)
+5. Open CMD and navigate to root folder of the project
+6. Execute next command: pytest TestDatabaseClass.py --html=additional/pytest_report.html
+7. Check additional folder for Test Report and Excel file with test cases
 
-
-Hello PyTest task
-
-In this task you will create a project for running PyTest and perform basic testing of data from "AdventureWorks2012" database via SQL statements.
 
 # Task:
 1. Create 2 DIFFERENT test cases for data checks on "AdventureWorks2012" database (3 different tables) and document them (name, steps, expected results).

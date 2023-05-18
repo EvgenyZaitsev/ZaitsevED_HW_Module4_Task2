@@ -1,0 +1,16 @@
+pipeline {
+agent any
+stages {
+    stage ('GIT Checkout'){
+        steps {
+            git branch: 'main',
+			url: 'https://github.com/EvgenyZaitsev/ZaitsevED_HW_Module4_Task2.git'
+        }
+    }
+    stage ('Test'){
+        steps {
+            bat 'start cmd pytest TestDatabaseClass.py --html=additional\\pytest_report.html'
+        }
+    }
+}
+}
